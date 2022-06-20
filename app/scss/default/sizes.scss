@@ -1,0 +1,53 @@
+@import 'variables';
+
+// title-size {
+  .title {
+    @media(max-width: $lg) {
+      &--sm {
+        font-size: 18px;
+      }
+      &--md {
+        font-size: 32px;
+      }
+      &--lg {
+        font-size: 56px;
+      }
+    }
+    @media(max-width: $md) {
+      &--sm {
+        font-size: 16px;
+      }
+      &--md {
+        font-size: 24px;
+      }
+      &--lg {
+        font-size: 48px;
+      }
+    }
+    }
+
+// text-sizes
+.text-size {
+  @media(max-width: $lg) {
+    &--sm {
+      font-size: 18px;
+    }
+    &--md {
+      font-size: 32px;
+    }
+    &--lg {
+      font-size: 56px;
+    }
+  }
+  @media(max-width: $md) {
+    &--sm {
+      font-size: 16px;
+    }
+    &--md {
+      font-size: 24px;
+    }
+    &--lg {
+      font-size: 48px;
+    }
+  }
+}
