@@ -76,7 +76,7 @@ function sprite() {
     }
   };
   
-  return src('app/svg/*.svg')
+  return src('app/for_sprite/*.svg')
   .pipe(svgSprite(config))
   .pipe(dest('app/img/'));
 }
