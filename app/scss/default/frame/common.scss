@@ -1,0 +1,71 @@
+// Flex
+.flex-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-sc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-ec {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-row {
+  flex-flow: row nowrap;
+}
+
+.flex-col {
+  flex-flow: column nowrap;
+}
+
+// Position
+
+.abs {
+  position: absolute;
+}
+
+.fix {
+  position: fixed;
+}
+
+// Font-weight
+
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
+.w600 {
+  font-weight: 600;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+// Hide/Show
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+

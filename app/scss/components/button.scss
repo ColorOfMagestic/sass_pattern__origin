@@ -1,5 +1,10 @@
 .btn {
-
+  display: flex;
+  font-family: inherit;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
 }
 
 .btn--primary {
