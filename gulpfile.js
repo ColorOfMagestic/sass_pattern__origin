@@ -42,7 +42,7 @@ function cleanDist() {
   return del("dist");
 }
 
-function images() {
+function transformImages() {
   return src("app/img/**/*")
     .pipe(
       imagemin([
@@ -119,6 +119,8 @@ function build() {
       "app/img/**/*",
       "app/js/*.js",
       "app/*.html",
+      "app/PHPMailer/**/*",
+      "app/*.php"
     ],
     { base: "app" }
   ).pipe(dest("dist"));
@@ -139,9 +141,10 @@ exports.browsersync = browsersync;
 // gulp scripts - Следить за изменениями в скриптах JS
 exports.scripts = scripts;
 // gulp images - Сжатие изображений и сохранение в /dist/images
-exports.images = images;
+exports.transformImages = transformImages;
 exports.sprite = sprite;
 exports.webp = webp;
+exports.images = parallel(transformImages, sprite, webp);
 // gulp del - Удалить папку /dist
 exports.cleanDist = cleanDist;
 // gulp fonts

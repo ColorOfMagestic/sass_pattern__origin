@@ -1,14 +1,49 @@
 @import 'variables/index';
 
-// html {
-
-// }
+html {
+  height: 100%;
+  font-size: 16px;
+}
 
 body {
+  display: flex;
+  flex-flow: column;
+  min-width: $sm;
+  min-height: 100%;
   font-family:"", sans-serif;
+  line-height: 1.2;
+  // color: $mainColor;
+  // background-color: $whiteColor;
+
 }
+
+.header {
+  flex: 0 0 auto;
+ }
+ 
+ .page {
+   flex: 1 0 auto;
+ 
+ }
+ .footer {
+   flex: 0 0 auto;
+ }
+ 
 
 .container {
   // width: ;
   margin: 0 auto;
 }
+
+@media(min-width: $md) {
+  .container {
+    // width: 89.33%;
+  }
+}
+
+@media(min-width: $lg) {
+  .container {
+    // width: 72.92%;
+  }
+}
+

@@ -1,59 +1,83 @@
-
-// sizes 
-$sm : 320px;
-$md : 767px;
-$mdl: 1023px;
-$lg : 1279px;
-$hd : 1439px;
+// sizes
+$sm: 320px;
+$md: 768px;
+$mdl: 1024px;
+$lg: 1280px;
+$hd: 1440px;
+$hg: 1920px;
 
 // title-size {
-  .title {
-    @media(max-width: $lg) {
-      &--sm {
-        font-size: 18px;
-      }
-      &--md {
-        font-size: 32px;
-      }
-      &--lg {
-        font-size: 56px;
-      }
-    }
-    @media(max-width: $md) {
-      &--sm {
-        font-size: 16px;
-      }
-      &--md {
-        font-size: 24px;
-      }
-      &--lg {
-        font-size: 48px;
-      }
-    }
-    }
+.title {
+  // font-family: "", sans-serif;
+
+  // &--sm {
+  //   font-size: 20px;
+  // }
+  // &--md {
+  //   font-size: 32px;
+  // }
+  // &--lg {
+  //   font-size: 40px;
+  // }
+
+  @media (min-width: $md) {
+    // &--sm {
+    //   font-size: 32px;
+    // }
+    // &--md {
+    //   font-size: 40px;
+    // }
+    // &--lg {
+    //   font-size: 48px;
+    // }
+  }
+
+  @media (min-width: $lg) {
+    // &--sm {
+    //   font-size: 40px;
+    // }
+    // &--md {
+    //   font-size: 48px;
+    // }
+    // &--lg {
+    //   font-size: 54px;
+    // }
+  // }
+}
 
 // text-sizes
 .text-size {
-  @media(max-width: $lg) {
-    &--sm {
-      font-size: 18px;
-    }
-    &--md {
-      font-size: 32px;
-    }
-    &--lg {
-      font-size: 56px;
-    }
+  // &--sm {
+  //   font-size: 16px;
+  // }
+  // &--md {
+  //   font-size: 20px;
+  // }
+  // &--lg {
+  //   font-size: 24px;
+  // }
+
+  @media (min-width: $md) {
+    // &--sm {
+    //   font-size: 20px;
+    // }
+    // &--md {
+    //   font-size: 24px;
+    // }
+    // &--lg {
+    //   font-size: 32px;
+    // }
   }
-  @media(max-width: $md) {
-    &--sm {
-      font-size: 16px;
-    }
-    &--md {
-      font-size: 24px;
-    }
-    &--lg {
-      font-size: 48px;
-    }
-  }
+
+  @media (min-width: $lg) {
+  //   &--sm {
+  //     font-size: 24px;
+  //   }
+  //   &--md {
+  //     font-size: 32px;
+  //   }
+  //   &--lg {
+  //     font-size: 40px;
+  //   }
+  // }
 }

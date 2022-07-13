@@ -1,29 +1,7 @@
-// Flex
-.flex-cc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-sc {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.flex-ec {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.flex-row {
-  flex-flow: row nowrap;
-}
-
-.flex-col {
-  flex-flow: column nowrap;
-}
+// variables
+$start: flex-start;
+$center: center;
+$end:flex-end;
 
 // Position
 
@@ -33,6 +11,69 @@
 
 .fix {
   position: fixed;
+}
+
+// Flex
+.flex-row {
+  flex-flow: row nowrap;
+}
+
+.flex-col {
+  flex-flow: column nowrap;
+}
+
+.flex {
+  display: flex;
+  align-items: $start;
+  justify-content: $start;
+}
+
+.flex-sc {
+  display: flex;
+  align-items: $start;
+  justify-content: $center;
+}
+
+.flex-se {
+  display: flex;
+  align-items: $start;
+  justify-content: $end;
+}
+
+.flex-cs {
+  display: flex;
+  align-items: $center;
+  justify-content: $start;
+}
+ 
+.flex-cc {
+  display: flex;
+  align-items: $center;
+  justify-content: $center;
+}
+
+.flex-ce {
+  display: flex;
+  align-items: $center;
+  justify-content: $end;
+}
+
+.flex-es {
+  display: flex;
+  align-items: $end;
+  justify-content: $start;
+}
+ 
+.flex-ec {
+  display: flex;
+  align-items: $end;
+  justify-content: $center;
+}
+
+.flex-ee {
+  display: flex;
+  align-items: $end;
+  justify-content: $end;
 }
 
 // Font-weight
@@ -68,4 +109,10 @@
   visibility: visible;
   opacity: 1;
 }
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
 
